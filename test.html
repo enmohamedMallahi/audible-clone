@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/assets/imgs/icons16px.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Audible.com | Try Audible</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+      main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+    
+      #text {
+        width: 80vw;
+    display: block;
+    height: 50vh;
+      }
+
+      #output {
+        padding: 2rem;
+        display: flex;
+        gap: 1rem;
+      }
+
+      #output > div {
+        background-color: royalblue;
+        color: #fff;
+      }
+    </style>
+</head>
+
+
+<body>
+  <!-- Navbar -->
+  
+    <nav class="navbar" style="padding: 1rem 4rem; background-color: royalblue;">
+      <a class="navbar-bran">
+        <img src="/assets/imgs/logo.svg" alt="">
+      </a>
+      <ul class="navbar-menu">
+        <li><a href="/">Exclusive offer for Prime members</a></li>
+
+        <li><a href="/signin">Sign In</a></li>
+      </ul>
+    </nav>
+   
+  <main>
+    <!-- <h1>Hello Vite!</h1> -->
+    <!-- <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a> -->
+    <div id="output"></div>
+    <textarea id="text"></textarea>
+    <div>
+      <label for="speed">Speed</label>
+      <input type="number" name="spee" id="speed" min=".5" max="3" step=".5" value="1">
+      <button id="play-button">Play</button>
+      <button id="pause-button">Pause</button>
+      <button id="stop-button">Stop</button>
+
+    </div>
+  </main>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
